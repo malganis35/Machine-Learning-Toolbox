@@ -3,3 +3,7 @@
   prompt = false
 [alias]
   wdiff = diff --word-diff=color --unified=1
+  
+[diff "xls"]
+  binary = true
+  textconv = /externalToolbox/libraries/xls2txt-0.15
