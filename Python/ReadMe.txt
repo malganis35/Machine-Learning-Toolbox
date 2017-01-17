@@ -47,6 +47,6 @@ Summary
 		win32 refers to the Python version, not Windows.
 ** Open a command prompt at the location of the downloaded files and type:
 		pip install "numpy‑1.12.0rc2+mkl‑cp36‑cp36m‑win32.whl"
-** pip install "opencv_python..."
+** Use the same method to install opencv, scipy and scikit-learn : pip install "opencv_python..." etc.
 
 
