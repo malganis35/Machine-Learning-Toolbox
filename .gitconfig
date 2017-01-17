@@ -7,3 +7,7 @@
 [diff "xls"]
   binary = true
   textconv = /externalToolbox/libraries/xls2txt-0.15
+  
+[diff "xlsx"]
+  binary = true
+  textconv = /externalToolbox/libraries/xls2txt-0.15

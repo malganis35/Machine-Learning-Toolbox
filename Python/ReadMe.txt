@@ -1,4 +1,4 @@
-Machine Learning Toolbox for R and Python
+﻿Machine Learning Toolbox for R and Python
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Author:
 Cao Tri DO - caotri.do88@gmail.com
@@ -15,11 +15,16 @@ Summary
 --------------------------------------------------------------------------------------------------
 1. HOW TO INSTALL PYTHON
 --------------------------------------------------------------------------------------------------
-* Installing Python 3.6 (for windows): https://www.python.org/downloads/ -> Python 3.6.0 (32-bit)
+* Installing Python 3.6.0 (for windows): https://www.python.org/downloads/ -> Python 3.6.0 (32-64-bit)
 * Make sure to check "Add to environment variables".
+-- If not, in Windows, locate the path installation of Python
+-- in general : C:\Python36;
+-- or : C:\Users\xxx\AppData\Local\Programs\Python\Python36;
+-- Go in Explorer, right click then --> Properties --> Environement variables --> Add to the variable "Path"
 * If it's installed correctly you shouuld be able to open a command prompt and type "python".
-
-
+* IDE : Liclipse : http://www.liclipse.com/download.html
+* tutorial : https://www.youtube.com/watch?v=fAa80SpQJHo
+* Anaconda : https://ipython.org/
 
 --------------------------------------------------------------------------------------------------
 2. HOW TO USE PYTHON
