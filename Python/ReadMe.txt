@@ -36,7 +36,17 @@ Summary
 
 
 --------------------------------------------------------------------------------------------------
-3. INSTALL SOME USEFUL TOOLBOX FOR PYTHON
+3. INSTALLING PACKAGE
+--------------------------------------------------------------------------------------------------
+* From : https://packaging.python.org/installing/
+* go to a command line in windows
+* python -m pip install -U pip setuptools
+* install numPy : python -m pip install numpy
+* install sciPy : python -m pip install scipy
+* install scikit-learn : python -m pip install -U scikit-learn
+
+--------------------------------------------------------------------------------------------------
+4. INSTALL SOME USEFUL TOOLBOX FOR PYTHON
 --------------------------------------------------------------------------------------------------
 * OPENCV
 ** Installing Opencv:
@@ -48,5 +58,8 @@ Summary
 ** Open a command prompt at the location of the downloaded files and type:
 		pip install "numpy‑1.12.0rc2+mkl‑cp36‑cp36m‑win32.whl"
 ** Use the same method to install opencv, scipy and scikit-learn : pip install "opencv_python..." etc.
+
+* SCIKIT-LEARN
+** http://scikit-learn.org/stable/install.html
 
 
