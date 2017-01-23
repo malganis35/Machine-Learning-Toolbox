@@ -19,20 +19,14 @@ i = 1
 
 fileName = "..\..\..\data\Classification\iris\iris.data"
 
-#flowerData = csv.reader(open(fileName, 'r'), delimiter=',', quotechar='|')
-#for row in flowerData:
-#    print(' '.join(row))
-#    i = i + 1
-#    if i == 5:
-#
+
 
 flowerData =  np.loadtxt(fname = fileName, delimiter = ',', dtype ={'names': ('x1', 'x2', 'x3', 'x4', 'Class'), 
                                                               'formats': (np.float64, np.float64, np.float64, np.float64, 'S30')})
 
 print(type(flowerData))
 print(flowerData.shape[0])
-#print(flowerData)
-#print(flowerData[3])
+
 
 nbFeats = 4
 
@@ -45,7 +39,6 @@ for flower in flowerData:
     
 flowerDataMat = np.array(flowerDataMat).reshape([flowerData.shape[0], nbFeats])
 
-#print(flowerDataLabel)
 
 def flower_to_class (argument):
     switcher = {
@@ -73,8 +66,6 @@ X_train_scaled = sc.transform(X_train)
 X_test_scaled = sc.transform(X_test)
 
 
-#svm = SVC(kernel='rbf', random_state=0, gamma=10.10, C=50.0)
-
 svm = SVC(C=20, cache_size=200, class_weight='balanced', coef0=0.0,
 decision_function_shape='ovr', degree=3, gamma=20, kernel='rbf',
 max_iter=-1, probability=False, random_state=None, shrinking=False,
@@ -83,17 +74,11 @@ tol=0.001, verbose=False)
 svm.fit(X_train_scaled, y_train)
  
 
-
-#predMat = clf.predict(flowerDataMat)
-
-#print( (predMat == flowerDataLabelNum).sum()/np.array(flowerDataLabelNum).sum())
-
 print('Accuracy on training set is {:.2f}'.format(svm.score(X_train_scaled, y_train)))
 print('Accuracy on test set is {:.2f}'.format(svm.score(X_test_scaled, y_test)))
 
 
 knn = KNeighborsClassifier(n_neighbors=5, p=2, metric='minkowski')
-#knn=KNeighborsRegressor(n_neighbors=2)
 knn.fit(X_train_scaled, y_train)
 
 print('Accuracy of the knn classifier is {:.2f} on training data'.format(knn.score(X_train_scaled, y_train)))
