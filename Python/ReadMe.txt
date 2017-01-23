@@ -1,6 +1,7 @@
-﻿Machine Learning Toolbox for R and Python
+
+Machine Learning Toolbox for R and Python
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Author:
+Authors:
 Cao Tri DO - caotri.do88@gmail.com
 Stefen CHAN - 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -9,7 +10,6 @@ Summary
 1. HOW TO INSTALL PYTHON
 2. HOW TO USE PYTHON
 3. INSTALL SOME USEFUL TOOLBOX FOR PYTHON
-
 
 
 --------------------------------------------------------------------------------------------------
@@ -29,10 +29,9 @@ Summary
 --------------------------------------------------------------------------------------------------
 2. HOW TO USE PYTHON
 --------------------------------------------------------------------------------------------------
-* General website 								: https://www.python.org/
-* Introduction to Python (French) 				: https://openclassrooms.com/courses/apprenez-a-programmer-en-python
+* General website 				: https://www.python.org/
+* Introduction to Python (French) 		: https://openclassrooms.com/courses/apprenez-a-programmer-en-python
 * Function and commands from Matlab to Python 	: http://mathesaurus.sourceforge.net/matlab-numpy.html
-
 
 
 --------------------------------------------------------------------------------------------------
