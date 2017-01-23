@@ -45,21 +45,25 @@ Summary
 * install sciPy : python -m pip install scipy
 * install scikit-learn : python -m pip install -U scikit-learn
 
---------------------------------------------------------------------------------------------------
-4. INSTALL SOME USEFUL TOOLBOX FOR PYTHON
---------------------------------------------------------------------------------------------------
-* OPENCV
-** Installing Opencv:
-		To install Opencv with Python 3, we will use wheel files.
-		Download here: http://www.lfd.uci.edu/~gohlke/pythonlibs/ the numpy and opencv ".whl".
+* Alternatively, packages can be installed using wheel ".whl" files by dowloading them here: 
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
 ** For example: numpy‑1.12.0rc2+mkl‑cp36‑cp36m‑win32.whl
 		The number after cp corresponds to the version of Python. Here, cp36 means Python 3.6.
 		win32 refers to the Python version, not Windows.
-** Open a command prompt at the location of the downloaded files and type:
-		pip install "numpy‑1.12.0rc2+mkl‑cp36‑cp36m‑win32.whl"
-** Use the same method to install opencv, scipy and scikit-learn : pip install "opencv_python..." etc.
+Then, open a command prompt at the location of the downloaded files and type:
+		pip install "numpy‑1.12.0rc2+mkl‑cp36‑cp36m‑win32.whl"		
 
-* SCIKIT-LEARN
+--------------------------------------------------------------------------------------------------
+4. INSTALL SOME USEFUL TOOLBOX FOR PYTHON
+--------------------------------------------------------------------------------------------------
+* OPENCV: Image processing toolbox
+
+* Tensorflow: Deep learning toolbox
+
+* SCIKIT-LEARN: Machine learning toolbox
 ** http://scikit-learn.org/stable/install.html
 
+* Pandas
+
+* Keras
 
