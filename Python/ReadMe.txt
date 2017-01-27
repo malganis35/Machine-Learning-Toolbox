@@ -39,11 +39,27 @@ Summary
 3. INSTALLING PACKAGE
 --------------------------------------------------------------------------------------------------
 * From : https://packaging.python.org/installing/
+
+1st method : Use directly the command line
+* This supposed that you have a GCC compiler on your windows
 * go to a command line in windows
 * python -m pip install -U pip setuptools
 * install numPy : python -m pip install numpy
 * install sciPy : python -m pip install scipy
 * install scikit-learn : python -m pip install -U scikit-learn
+* install matplotlib : python -m pip install -U matplotlib
+
+2nd method
+* download the builds and install then directly
+* go to : http://www.lfd.uci.edu/~gohlke/pythonlibs/
+* Search your library
+* open command line and type : python -m pip install -U "my_package.whl"
+
+3rd method
+* install from anaconda
+* if you have any errors in loading, it certainly due to the fact that you need to upgrade all packages
+* -m pip install --upgrade pip
+* -m pip install --upgrade numpy
 
 --------------------------------------------------------------------------------------------------
 4. INSTALL SOME USEFUL TOOLBOX FOR PYTHON
