@@ -1,0 +1,48 @@
+source: https://web.fe.up.pt/~epia2017/ai-competitions/discovery-challenge/
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+DESCRIPTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+On-demand transport services such as taxi, uber-like riderships or car sharing are widely spread today. 
+Large urban areas require flexible last mile transportation offer that can effectively complement the mass transit 
+networks in place (e.g. subways). The recent massive growth of the urban population have posed unprecedented 
+challenges to the sustainability of the major cities in a worldwide scale, ranging from security to environmental 
+issues, among others. In the last decades, there was a large concern of increasing the transportation offer 
+(namely, in terms of service frequency and/or taxi fleet size). However, such massive offer increase is not possible 
+to maintain in a short-term future. Consequently, the need of efficient, green, convenient and direct on-demand 
+transportation services is real as an urgent answer to the present demographic trend is now a concrete need.
+The mobility intelligence of on-demand transport services closely related to the dispatching policies in place 
+(e.g. how should I drive my vacant taxi? How should I relocate my carsharing fleet throughout the day?). 
+The dispatching policy depends on the seasonalities of the passenger demand as well as on the traffic conditions of 
+each particular area. Demand can be divided in quantity and type/fare – which implies to predict apriori the services 
+origin and destination, respectively.
+In this challenge, we propose you to build a predictive framework able to infer the service fare type. This model 
+will generalize the behavior demand on both spatial and temporal dimensions to determine a categorical target 
+variable w.r.t. each service fare.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Training Data set:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Initially, we provide an training data set describing trips/samples from three months 
+(from 01/01/2015 to 31/03/2015) of the services performed by roughly 1k taxis running in the city of Thessaloniki, 
+Greece (i.e. 80Mb of datastored in one single CSV file named data_train_competition-csv). These taxis operate 
+through a taxi dispatch central, using mobile data terminals installed in the vehicles. Each data sample 
+corresponds to one completed trip. It contains a total of 5 features, described as follows:
+1) ID: (integer) It contains an unique identifier for each trip;
+2) TAXI_ID: (integer) It contains an unique identifier for each vehicle;
+3) TIMESTAMP: (float) Julian Time stamp (in seconds). It identifies the trip’s start;
+4) STARTING_LATITUDE: (float) Latitude coordinate of the trip starting point (i.e. WGS84 format);
+5) STARTING_LONGITUDE: (float) Longitude coordinate of the trip starting point (i.e. WGS84 format);
+The target variable REVENUE_CLASS is categorical. It reflects the fare of a given trip and it can range by five 
+possible values: 1/2/3/4/5 as Low/Normal/Medium/High/Very High.
+Additionally, you can also use one external data source (http://www.timeanddate.com/) to get information about 
+holidays and observances in Greece during 2015.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Testing Data set:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+A data set similar to the training one is shared for testing purposes i.e data_test_n_competition.csv. However, this data set contain no information about the values of the target variable. Your job is to determine such values.
