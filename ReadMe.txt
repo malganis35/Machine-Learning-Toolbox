@@ -22,7 +22,9 @@ en installant une interface (recommandé), TortoiseGit : https://tortoisegit.org/
 -- Pour voir le diff des fichiers : 
 -- Pour créer un tag (photo du code à un moment t) : clique droit --> "git tag"
 
-
+USEFUL SOFTWARE
+* source tree :
+-- it will alows to re-edit a commit message : https://vimeo.com/88255867
 
 Ask access to Cao Tri DO (malganis35)
 
